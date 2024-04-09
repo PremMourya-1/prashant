@@ -1,0 +1,14 @@
+
+
+
+.transition5 {
+    transition: all ease .5s;
+}
+.transition3{
+    transition: all ease .3s
+}
+
+html{
+    scroll-padding: 140px;
+}
+

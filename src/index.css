@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif !important;
+   
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+:root {
+    --primary-color: #f09013;
+    --card-bg: #DCE5FF;
+    --light: #F5F5F5;
+    
+}
+
+* {
+    @apply scroll-smooth scroll-p-28
+}
+
+.parmary {
+    @apply bg-[color:var(--primary-color)]
+}
+
+.parmary-text {
+    @apply text-[color:var(--primary-color)]
+}
+
+.container {
+    @apply max-w-[1260px] m-auto px-3
+}
+
+.inputBox {
+    @apply relative
+}
+
+.inputBox label {
+    @apply absolute transition-all font-medium bg-white rounded-md px-1 text-gray-600 py-1 left-2 cursor-pointer select-none pointer-events-none top-2/4 translate-y-[-50%]
+}
+
+.form-control {
+    @apply rounded-md w-full border-gray-500
+}
+
+.form-control:focus~label,
+.form-control:valid~label {
+    @apply top-0 text-[12px]
+}
+
+.clickButton:focus {
+    @apply scale-90 outline-2 outline-gray-600
+}
+
+.navParent {
+    @apply lg:flex lg:pointer-events-none items-center justify-center lg:fixed lg:opacity-0 lg:h-screen lg:w-screen top-0 left-0
+}
+
+.responsive-nav {
+    @apply lg:relative lg:mb-40 lg:max-w-[300px] lg:gap-4 lg:border lg:shadow-xl lg:p-6 lg:flex-col lg:bg-white lg:rounded-2xl
+}
+
+.navParent.show {
+    @apply opacity-100 pointer-events-auto mb-0
+}
+
+.responsive-nav-ul {
+    @apply lg:flex-col
+}
+
+.navParent.show .nav {
+    @apply mb-0 gap-8
+}
+
+.themeButtonHover {
+    @apply hover:bg-blue-700 hover:shadow-2xl
+}
+
+.sectionPadding {
+    @apply py-20 lg:py-14 md:py-10
+}
+
+.swiper-button-prev:before {
+    @apply inline-block
+}
+
+.textBlack {
+    @apply text-[#323030]
+}
+
+.fixeHeader {
+    @apply fixed -top-16 translate-y-16
+}
+
+
+.registerModal.show {
+    @apply opacity-100 pointer-events-auto
+}
+
+.registerModal.show .modalContent {
+    @apply translate-y-0
+}
+
+.form-control {
+    @apply p-2 w-full border-2 border-gray-400 focus-visible:border-blue-500 focus:border-blue-500
+}
+.themeButton {
+    @apply  flex md:m-auto md:text-sm  items-center w-max gap-3 text-white bg-[color:var(--primary-color)] themeButtonHover rounded-md
+}
